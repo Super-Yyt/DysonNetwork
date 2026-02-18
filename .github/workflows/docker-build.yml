@@ -111,6 +111,6 @@ jobs:
                   file: DysonNetwork.${{ matrix.service }}/Dockerfile
                   push: true
                   tags: |
-                      ghcr.io/${{ vars.PACKAGE_OWNER || github.repository_owner }}/dyson-${{ matrix.image }}:${{ steps.nbgv.outputs.SimpleVersion }}
-                      ghcr.io/${{ vars.PACKAGE_OWNER || github.repository_owner }}/dyson-${{ matrix.image }}:latest
+                      ghcr.io/super-yyt/dyson-${{ matrix.image }}:${{ steps.nbgv.outputs.SimpleVersion }}
+                      ghcr.io/super-yyt/dyson-${{ matrix.image }}:latest
                   platforms: linux/amd64
